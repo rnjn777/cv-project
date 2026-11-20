@@ -1,0 +1,20 @@
+{
+  "task": "Binary (CN vs AD)",
+  "num_patients": 48,
+  "accuracy": 85.41666666666666,
+  "sensitivity": 90.0,
+  "specificity": 82.14285714285714,
+  "precision": 78.26086956521739,
+  "f1": 0.8372093023255814,
+  "roc_auc": 0.9767857142857143,
+  "confusion_matrix": [
+    [
+      23,
+      5
+    ],
+    [
+      2,
+      18
+    ]
+  ]
+}

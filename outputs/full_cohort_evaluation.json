@@ -1,0 +1,81 @@
+{
+  "num_patients": 98,
+  "overall_accuracy": 58.16326530612245,
+  "macro_f1": 0.5825633193330789,
+  "macro_auc": 0.7915092447235305,
+  "mean_latency_ms": 424.0156040819153,
+  "throughput_fps": 2.358403771873477,
+  "per_class": {
+    "CN": {
+      "Sensitivity (Recall)": 0.5714285714285714,
+      "Specificity": 0.8571428571428571,
+      "Precision": 0.6153846153846154,
+      "F1-Score": 0.5925925925925927,
+      "Support (Total True)": 28
+    },
+    "MCI": {
+      "Sensitivity (Recall)": 0.56,
+      "Specificity": 0.6041666666666666,
+      "Precision": 0.5957446808510638,
+      "F1-Score": 0.577319587628866,
+      "Support (Total True)": 50
+    },
+    "AD": {
+      "Sensitivity (Recall)": 0.65,
+      "Specificity": 0.8461538461538461,
+      "Precision": 0.52,
+      "F1-Score": 0.5777777777777778,
+      "Support (Total True)": 20
+    }
+  },
+  "confusion_matrix": [
+    [
+      16,
+      12,
+      0
+    ],
+    [
+      10,
+      28,
+      12
+    ],
+    [
+      0,
+      7,
+      13
+    ]
+  ],
+  "selective_classification": {
+    "consensus_count": 46,
+    "consensus_coverage_pct": 46.93877551020408,
+    "accuracy_on_consensus": 65.21739130434783,
+    "deferred_count": 52,
+    "accuracy_on_deferred": 51.92307692307693
+  },
+  "population_cross_attention_matrix": [
+    [
+      0.265594624591117,
+      0.2237273010672355,
+      0.2588060778014514,
+      0.2518719928909321
+    ],
+    [
+      0.26547209447135733,
+      0.2271376389021776,
+      0.26108986671481815,
+      0.2463004000636996
+    ],
+    [
+      0.2745866031975162,
+      0.22607785037585668,
+      0.2517690299725046,
+      0.24756651843080715
+    ],
+    [
+      0.24679594486951828,
+      0.2432005311153373,
+      0.25164657177365557,
+      0.25835695193738356
+    ]
+  ]
+}

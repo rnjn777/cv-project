@@ -1,0 +1,33 @@
+# Master config — CV Lab Multi-Agent Ensemble
+defaults:
+  - model/ceah@model.ceah: ceah
+  - model/gnn@model.gnn: gnn
+  - model/clinical@model.clinical: clinical
+  - model/cognitive@model.cognitive: cognitive
+  - training: default
+  - _self_
+
+# ── General ──────────────────────────────────────────────
+project_name: cv_lab_alzheimers
+seed: 42
+num_classes: 3          # CN=0, MCI=1, AD=2
+class_names: [CN, MCI, AD]
+
+# ── Data ─────────────────────────────────────────────────
+data:
+  root: ./data/raw          # path to dataset root
+  synthetic: false          # use real ADNI dataset by default (set true for mock data)
+  num_synthetic_samples: 200
+  val_split: 0.15
+  test_split: 0.15
+  mri_shape: [91, 109, 91]  # MNI152 standard space
+  num_clinical_features: 11 # 11 features in clinical.csv
+  num_cognitive_features: 10 # 10 features in cognitive.csv
+  num_workers: 0            # 0 = main process only (safe on Windows)
+  batch_size: 4
+
+# ── Paths ─────────────────────────────────────────────────
+paths:
+  checkpoints: ./checkpoints
+  logs: ./logs
+  outputs: ./outputs

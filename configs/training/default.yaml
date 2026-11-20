@@ -1,0 +1,21 @@
+# Training hyperparameters
+lr: 1e-4
+weight_decay: 1e-4
+epochs: 100
+patience: 15              # early stopping patience
+scheduler: cosine         # cosine | step | plateau
+warmup_epochs: 5
+gradient_clip: 1.0
+label_smoothing: 0.1
+
+# Phase flags
+train_smri_branch: true
+train_features_branch: true
+joint_finetune: true
+joint_finetune_epochs: 20
+joint_finetune_lr: 1e-5
+
+# Logging
+use_wandb: false          # set true if wandb is configured
+log_every_n_steps: 10
+save_top_k: 3

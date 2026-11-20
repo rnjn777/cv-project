@@ -1,0 +1,10 @@
+# GNN backbone hyperparameters
+num_regions: 90           # AAL atlas nodes
+node_feature_dim: 64      # features per brain region node
+gnn_hidden_dim: 128
+gnn_out_dim: 256
+num_gnn_layers: 3
+gnn_type: GAT             # GAT | GCN | GraphSAGE
+gat_heads: 4
+dropout: 0.3
+mc_dropout_samples: 30

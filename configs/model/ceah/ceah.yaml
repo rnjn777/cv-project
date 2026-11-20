@@ -1,0 +1,14 @@
+# CE-AH backbone hyperparameters
+patch_size: 8             # 3D patch size (8x8x8 voxels)
+patch_embed_dim: 128      # embedding dim per patch
+num_heads_patch: 4        # attention heads at patch level
+num_heads_region: 4       # attention heads at region level
+num_heads_global: 8       # attention heads at whole-brain level
+num_regions: 90           # AAL atlas regions
+region_embed_dim: 256
+global_embed_dim: 512
+dropout: 0.3
+depth_patch: 2            # transformer blocks at patch level
+depth_region: 2           # transformer blocks at region level
+depth_global: 2           # transformer blocks at global level
+mc_dropout_samples: 30    # MC Dropout forward passes

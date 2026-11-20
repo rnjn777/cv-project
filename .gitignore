@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Large Archives & Raw Medical Scans (Exceeds GitHub limits)
+download.zip
+*.zip
+*.tar
+*.gz
+data/raw/mri/
+*.nii
+*.nii.gz
+
+# Checkpoints (Optional: uncheck if keeping pipeline_final.pt, but git recommends git-lfs for weights)
+checkpoints/*.pt
+!checkpoints/pipeline_final.pt
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs & Hydra outputs
+outputs/202*
+logs/
+

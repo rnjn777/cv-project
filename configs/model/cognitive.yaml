@@ -1,0 +1,5 @@
+# Cognitive scores assistant hyperparameters
+input_dim: 10             # memory, visuospatial, attention, etc.
+hidden_dims: [64, 128, 64]
+dropout: 0.3
+mc_dropout_samples: 30
